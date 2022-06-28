@@ -74,6 +74,6 @@
     <!-- footer-end -->
 
     <script src="js/drop-down-navbar.js"></script>
-    <script src="js/fetch-menu.js?jf=fs"></script>
+    <script src="js/fetch-menu.js"></script>
 </body>
 </html>

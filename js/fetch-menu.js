@@ -34,6 +34,7 @@ request('json/menu.json', ajax => {
     daftarMenu = daftarMenu.join('');
     menu.innerHTML = daftarMenu;
 }, ajax => {
+    menu.style.display = 'block';
     menu.style.height = `${window.innerHeight}px`;
-    menu.innerHTML = `terjadi masalah ${ajax.responseText}`;
+    menu.innerHTML = `${ajax.responseText}`;
 });
