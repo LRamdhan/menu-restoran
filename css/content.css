@@ -1,0 +1,77 @@
+.content {
+    display: flex;
+    justify-content: center;
+    background-color: #FBFBFB;
+    padding: 15px;
+}
+
+.container {
+    width: 800px;
+}
+
+.container .judul {
+    margin-bottom: 15px;
+}
+
+.container .judul h2{
+    font-size: 30px;
+}
+
+.menu {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-auto-rows: max-content;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.menu .column {
+    display: flex;
+    justify-content: center;
+}
+
+/* card */
+.card {
+    width: 245px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .deskripsi {
+    padding: 10px;
+}
+
+.card .deskripsi h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.card .deskripsi p {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.tbl-pesan {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card .deskripsi .pesan {
+    width: 79px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* card */
