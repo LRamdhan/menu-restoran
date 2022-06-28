@@ -18,8 +18,6 @@
 }
 
 .menu {
-    /* height: 200px; */
-    /* background-color: aqua; */
     display: grid;
     grid-template-rows: max-content;
     grid-auto-rows: max-content;
@@ -31,15 +29,6 @@
     display: flex;
     justify-content: center;
 }
-/* 
-.menu .column:nth-child(even) {
-    background-color: salmon;
-}
-
-.menu .column:nth-child(odd) {
-    background-color: slateblue;
-} */
-
 
 /* card */
 .card {
