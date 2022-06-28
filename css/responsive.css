@@ -1,3 +1,11 @@
+@media(max-width: 800px) {
+    /* content */
+    .container {
+        width: 100%;
+    }
+    /* content */
+}
+
 @media(max-width: 768px) {
     /* nav */
     nav {
@@ -24,7 +32,7 @@
         padding: 5px 15px 5px 15px;
     }
 
-    .hamberger {
+    /* .hamberger {
         width: 24px;
         height: 20px;
     }
@@ -48,6 +56,6 @@
 
     .drop-down-panjang {
         height: 199.5px;   
-    }
+    } */
     /* nav */
 }
