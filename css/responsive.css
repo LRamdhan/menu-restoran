@@ -1,0 +1,53 @@
+@media(max-width: 768px) {
+    /* nav */
+    nav {
+        padding: 5px 40px 5px 40px;
+    }
+
+    nav .logo {
+        width: 140px;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    .hamberger {
+        display: flex;
+    }
+    /* nav */
+}
+
+@media(max-width: 500px) {
+    /* nav */
+    nav {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .hamberger {
+        width: 24px;
+        height: 20px;
+    }
+
+    .hamberger .garis * {
+        height: 3px;
+    }
+
+    nav .logo {
+        width: 120px;
+    }
+
+    .drop-down .links-drop li a { 
+        font-size: 14px;
+    }
+
+    .drop-down .links-drop {
+        margin-top: 42px;
+        padding: 10px 15px 10px 15px;
+    }
+
+    .drop-down-panjang {
+        height: 199.5px;   
+    }
+    /* nav */
+}
