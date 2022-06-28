@@ -8,6 +8,3 @@ hamberger.addEventListener('click', event => {
     child[2].classList.toggle('miring-kanan');
     dropDown.classList.toggle('drop-down-panjang');
 });
-
-
-

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     background-color: #FBFBFB;
-    padding: 15px;
+    padding: 20px 15px;
 }
 
 .container {
@@ -28,13 +28,14 @@
 .menu .column {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 /* card */
 .card {
     width: 245px;
     background-color: white;
-    border: 1px solid grey;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274), -1px -1px 1.5px rgba(0, 0, 0, 0.226);
 }
 
 .card img {
@@ -45,15 +46,53 @@
     padding: 10px;
 }
 
-.card .deskripsi h3 {
+.card .deskripsi .nama {
     font-size: 20px;
     text-transform: capitalize;
     margin-bottom: 5px;
 }
 
-.card .deskripsi p {
+.card .deskripsi .kategori {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+/* warna-kategori */
+.pizza {
+    background-color: red;
+}
+
+.pasta {
+    background-color: purple;
+}
+
+.nasi {
+    background-color: orange;
+}
+
+.minuman {
+    background-color: rgb(0, 60, 255);
+}
+/* warna-kategori */
+
+.card .deskripsi .kategori .sub-kate{
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 3px 8px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.card .deskripsi .detail {
     font-size: 14px;
     margin-bottom: 7px;
+}
+
+.card .deskripsi .harga {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .tbl-pesan {
@@ -64,7 +103,7 @@
 .card .deskripsi .pesan {
     width: 79px;
     height: 25px;
-    background-color: blue;
+    background-color: rgb(0, 184, 0);
     border-radius: 10px;
     display: flex;
     justify-content: center;
