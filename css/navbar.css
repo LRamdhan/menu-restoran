@@ -5,6 +5,7 @@ nav {
     align-items: center;
     padding: 5px 70px 5px 70px;
     position: relative;
+    box-sizing: border-box;
 }
 
 nav * {

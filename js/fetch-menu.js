@@ -15,7 +15,7 @@ request('json/menu.json', ajax => {
     isiMenu.forEach(el => {
         daftarMenu.push(`<div class="column">
                             <div class="card">
-                                <img src="img/pizza/${el.gambar}" alt="">
+                                <img src="img/menu/${el.gambar}" alt="">
                                 <div class="deskripsi">
                                     <h3 class="nama">${el.nama}</h3>
                                     <div class="kategori">
@@ -34,5 +34,6 @@ request('json/menu.json', ajax => {
     daftarMenu = daftarMenu.join('');
     menu.innerHTML = daftarMenu;
 }, ajax => {
-    alert('request gagal');
+    menu.style.height = `${window.innerHeight}px`;
+    menu.innerHTML = `terjadi masalah ${ajax.responseText}`;
 });
