@@ -1,0 +1,33 @@
+nav {
+    background-color: #4A54B6;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 70px 5px 70px;
+}
+
+nav .logo {
+    width: 200px;
+}
+
+nav .links {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .links li {
+    display: inline-block;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+nav .links li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .links li a:hover {
+    color: rgb(214, 214, 214);
+}
+
