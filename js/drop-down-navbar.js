@@ -6,7 +6,7 @@ hamberger.addEventListener('click', event => {
     child[0].classList.toggle('miring-kiri');
     child[1].classList.toggle('mengecil');
     child[2].classList.toggle('miring-kanan');
-    dropDown.classList.toggle('drop-down-normal');
+    dropDown.classList.toggle('drop-down-panjang');
 });
 
 

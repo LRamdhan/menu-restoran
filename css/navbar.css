@@ -41,8 +41,8 @@ nav .links li a:hover {
 /* hamberger-menu */
 .hamberger {
     display: none;
-    width: 30px;
-    height: 27px;
+    width: 28px;
+    height: 24px;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -57,13 +57,13 @@ nav .links li a:hover {
 }
 
 .hamberger .garis * {
-    height: 5.5px;
+    height: 4px;
     border-radius: 30px;
 }
 
 .hamberger .garis .kiri {
     width: 50%;
-    background-color: red;
+    background-color: white;
 }
 
 .hamberger .garis .kanan {
@@ -84,28 +84,27 @@ nav .links li a:hover {
 /* hamberger-menu */
 
 /* drop-down */
-nav .drop-down {
+.drop-down {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    height: 100%;
     overflow: hidden;
     background-color: #4A54B6;
     z-index: 1;
     transition: 500ms;
 }
 
-.drop-down-normal {
-    height: 100%;   
+.drop-down-panjang {
+    height: 204.5px;   
 }
 
 .drop-down .links-drop {
-    margin-top: 58.59px;
+    margin-top: 47px;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px 20px 10px 20px;
-    /* height: 50px; */
-    /* background-color: salmon; */
+    padding: 10px 40px 10px 40px;
     list-style: none;
 }
 
@@ -113,6 +112,7 @@ nav .drop-down {
     text-transform: capitalize; 
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .drop-down .links-drop hr {
