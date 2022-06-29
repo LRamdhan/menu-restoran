@@ -34,8 +34,16 @@
     /* nav */
 
     /* content */
+    .content {
+        padding: 30px;
+    }
+
     .container .judul {
         display: none;
+    }
+
+    .card {
+        width: 100%;
     }
     /* content */
 
