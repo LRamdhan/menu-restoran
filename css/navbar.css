@@ -8,11 +8,6 @@ nav {
     box-sizing: border-box;
 }
 
-nav * {
-    position: relative;
-    z-index: 5;
-}
-
 nav .logo {
     width: 180px;
 }
@@ -82,45 +77,4 @@ nav .links li a:hover {
 .miring-kanan {
     transform: rotate(45deg);
 }
-/* hamberger-menu */
-
-/* drop-down */
-.drop-down {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    overflow: hidden;
-    background-color: #4A54B6;
-    z-index: 1;
-    transition: 300ms;
-}
-
-.drop-down-panjang {
-    height: 220.5px;   
-}
-
-.drop-down .links-drop {
-    margin-top: 47px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 40px 10px 40px;
-    list-style: none;
-}
-
-.drop-down .links-drop li a { 
-    text-transform: capitalize; 
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.drop-down .links-drop hr {
-    border: none;
-    height: 1px;
-    background-color: white;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-/* drop-down */
+/* hamberger-menu */ 

@@ -39,20 +39,6 @@
                 <div class="kanan"></div>
             </div>
         </div>
-
-        <div class="drop-down">
-            <ul class="links-drop">
-                <li><a href="#">home</a></li>
-                <hr>
-                <li><a href="#">about</a></li>
-                <hr>
-                <li><a href="#">menu</a></li>
-                <hr>
-                <li><a href="#">contact</a></li>
-                <hr>
-                <li><a href="#">service</a></li>
-            </ul>
-        </div>
     </nav>
     <!-- nav-end -->
 
@@ -69,11 +55,12 @@
 
     <!-- footer-start -->
     <footer>
-        <p>&copy;copyright 2022 | bulit by. Luji Ramdhan</p>
+        <p>&copy;copyright 2022 | built by.Luji Ramdhan</p>
     </footer>
     <!-- footer-end -->
 
-    <script src="js/drop-down-navbar.js"></script>
+    <script src="js/side-bar.js"></script>
     <script src="js/fetch-menu.js"></script>
+    <script src="test/script.js"></script>
 </body>
 </html>
