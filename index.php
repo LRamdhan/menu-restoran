@@ -1,3 +1,14 @@
+<?php
+    $menus = file_get_contents('json/menu.json');
+    $menus = json_decode($menus, true)["menu"];
+    $kategori = [];
+    foreach($menus as $menu) {
+        if(!in_array($menu['kategori'], $kategori)) {
+            $kategori[] = $menu['kategori'];
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,11 +35,12 @@
             <li id="link-menu">
                 <a href="#" data-el="pop-menu">menu</a>
                 <ul class="box-menu pop-menu-hilang" id="box-menu" data-el="pop">
-                    <li data-el="pop"><a href="#">semua menu</a></li>
-                    <li data-el="pop"><a href="#">pizza</a></li>
-                    <li data-el="pop"><a href="#">pasta</a></li>
-                    <li data-el="pop"><a href="#">nasi</a></li>
-                    <li data-el="pop"><a href="#">minuman</a></li>
+                    <li data-el="pop"><a href="#" data-kategori="all">semua menu</a></li>
+                    <?php foreach($kategori as $row) : ?>
+                        <li data-el="pop">
+                            <a href="#" data-kategori="<?= $row; ?>"><?= $row; ?></a>
+                        </li>
+                    <?php endforeach; ?>
                     <div class="direct" data-el="pop"></div>
                 </ul>
             </li>
@@ -80,11 +92,12 @@
                 </div>
                 <ul class="list-link" id="list-link">
                     <div class="space"></div>
-                    <li><a href="#">semua menu</a></li>
-                    <li><a href="#">pizza</a></li>
-                    <li><a href="#">pasta</a></li>
-                    <li><a href="#">nasi</a></li>
-                    <li><a href="#">minuman</a></li>
+                    <li><a href="#" data-kategori="all">semua menu</a></li>
+                    <?php foreach($kategori as $row) : ?>
+                        <li>
+                            <a href="#" data-kategori="<?= $row; ?>"><?= $row; ?></a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </li>
             <hr>
@@ -99,7 +112,7 @@
     <section class="content">
         <div class="container">
             <div class="judul">
-                <h2>Menu</h2>
+                <h2 id="kategori-menu">Menu</h2>
             </div>
             <div class="menu" id="menu"></div>
         </div>
@@ -112,7 +125,7 @@
     </footer>
     <!-- footer-end -->
 
-    <script src="js/fetch-menu.js?i=<?= uniqid(); ?>""></script>
+    <script src="js/get-menu.js?i=<?= uniqid(); ?>""></script>
     <script src="js/pop-menu.js?i=<?= uniqid(); ?>""></script>
     <script src="js/side-bar.js?i=<?= uniqid(); ?>""></script>
     <!-- <script src="test/script.js"></script> -->

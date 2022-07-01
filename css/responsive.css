@@ -38,8 +38,8 @@
         padding: 30px;
     }
 
-    .container .judul {
-        display: none;
+    .container .judul h2 {
+        font-size: 25px;
     }
 
     .card {
