@@ -34,8 +34,16 @@
     /* nav */
 
     /* content */
-    .container .judul {
-        display: none;
+    .content {
+        padding: 30px;
+    }
+
+    .container .judul h2 {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 100%;
     }
     /* content */
 
@@ -44,4 +52,10 @@
         font-size: 12.5px;
     }
     /* footer */
+
+    /* aside */
+    aside {
+        width: 250px;
+    }
+    /* aside */
 }

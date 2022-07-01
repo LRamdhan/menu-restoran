@@ -4,13 +4,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 5px 70px 5px 70px;
-    position: relative;
     box-sizing: border-box;
-}
-
-nav * {
-    position: relative;
-    z-index: 5;
 }
 
 nav .logo {
@@ -70,57 +64,58 @@ nav .links li a:hover {
 .hamberger .garis .kanan {
     width: 30%;
 }
+/* hamberger-menu */ 
 
-.miring-kiri {
-    transform: rotate(-45deg);
+/* drop-menu-start */
+#link-menu {
+    position: relative;
 }
 
-.mengecil {
-   transform: scale(0);
-}
-
-.miring-kanan {
-    transform: rotate(45deg);
-}
-/* hamberger-menu */
-
-/* drop-down */
-.drop-down {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    overflow: hidden;
-    background-color: #4A54B6;
-    z-index: 1;
-    transition: 300ms;
-}
-
-.drop-down-panjang {
-    height: 220.5px;   
-}
-
-.drop-down .links-drop {
-    margin-top: 47px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 40px 10px 40px;
-    list-style: none;
-}
-
-.drop-down .links-drop li a { 
-    text-transform: capitalize; 
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.drop-down .links-drop hr {
-    border: none;
-    height: 1px;
+#link-menu .box-menu {
+    width: 140px;
+    height: 180px;
     background-color: white;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    border-radius: 8px;
+    position: absolute;
+    top: 150%;
+    left: -30%;
+    box-sizing: border-box;
+    padding: 18px;
+    flex-direction: column;
+    justify-content: space-between;
 }
-/* drop-down */
+
+#link-menu .box-menu li {
+    display: block;
+    position: relative;
+    z-index: 4;
+}
+
+#link-menu .box-menu li a {
+    color: #616161;
+}
+
+#link-menu .box-menu li a:hover {
+    color: #9e9e9e;
+}
+
+#link-menu .box-menu .direct {
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    left: 20px;
+    top: -4px;
+    transform: rotate(45deg);   
+}
+
+.pop-menu-muncul {
+    display: flex;
+}
+
+.pop-menu-hilang {
+    display: none;
+}
+/* drop-menu-end */

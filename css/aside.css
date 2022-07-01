@@ -1,0 +1,87 @@
+aside {
+    position: fixed;
+    width: 300px;
+    background-color: #525DC8;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: 500ms;
+}
+
+.aside-muncul {
+    transform: translateX(-100%);
+}
+
+.aside-hilang {
+    transform: translateX(0);
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.close .hamberger .garis:first-child {
+    transform: rotate(-45deg);
+}
+
+.close .hamberger .garis:last-child {
+    transform: rotate(45deg);
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li, aside ul hr {
+    margin-bottom: 8px;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.drop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down {
+    height: 18px;
+    transition: 300ms;
+}
+
+.down-bawah {
+    transform: rotate(0);
+}
+
+.down-kiri {
+    transform: rotate(90deg);
+}
+
+.list-link {
+    overflow: hidden;
+    height: 0;
+    transition: 500ms;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.list-link li a {
+    font-weight: 300;
+}
+
+.space {
+    height: 8px;
+}
+
+.memanjang {
+    height: 130px;
+}
