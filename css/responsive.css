@@ -52,4 +52,10 @@
         font-size: 12.5px;
     }
     /* footer */
+
+    /* aside */
+    aside {
+        width: 250px;
+    }
+    /* aside */
 }

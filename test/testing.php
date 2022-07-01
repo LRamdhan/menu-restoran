@@ -1,3 +1,7 @@
+<?php
+    echo uniqid();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
